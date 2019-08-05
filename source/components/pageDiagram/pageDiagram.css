@@ -1,0 +1,28 @@
+#container {
+  min-width: 310px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+.container-fluid {
+  margin-bottom: 30px;
+}
+
+.date-input {
+  text-align: right;
+}
+
+.date-input strong {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.date-input input {
+  color: #007bff;
+  border: 1px solid #D3D3D3;
+}

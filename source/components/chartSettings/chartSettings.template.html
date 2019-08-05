@@ -1,0 +1,24 @@
+<table class="btn-outline-primary">
+  <tr>
+    <td class="td"><strong>Sensor</strong></td>
+    <td class="td">
+        <input type="radio" name="sensor{{$ctrl.chartOptions.chart.number}}" ng-model="$ctrl.typeSensor" ng-change='$ctrl.blockSensorClick($ctrl.blockLine)' value="Temperature" /> Temperature
+        <input type="radio" name="sensor{{$ctrl.chartOptions.chart.number}}" ng-model="$ctrl.typeSensor" ng-change='$ctrl.blockSensorClick($ctrl.blockLine)' value="Humidity" /> Humidity
+        <input type="radio" name="sensor{{$ctrl.chartOptions.chart.number}}" ng-model="$ctrl.typeSensor" ng-change='$ctrl.blockSensorClick($ctrl.blockLine)' value="Light" /> Light
+        <input type="radio" name="sensor{{$ctrl.chartOptions.chart.number}}" ng-model="$ctrl.typeSensor" ng-change='$ctrl.blockSensorClick($ctrl.blockLine)' value="Pressure" /> Pressure
+    </td>
+    <td class="td"><strong>Type</strong></td>
+    <td class="td">
+        <input type="radio" name="type_{{$ctrl.chartOptions.chart.number}}" ng-model="$ctrl.typeLine" ng-change='$ctrl.blockTypeClick($ctrl.blockLine)'
+          value="bar" /><span> Bar</span>
+        <input type="radio" name="type_{{$ctrl.chartOptions.chart.number}}" ng-model="$ctrl.typeLine" ng-change='$ctrl.blockTypeClick($ctrl.blockLine)'
+          value="spline" /><span> Spline</span>
+    </td>
+    <td class="td"><strong>Color of the line</strong></td>
+    <td class="td">
+        <input type="color" name="bg" value="#ff0000" ng-model="$ctrl.colorLine"
+        ng-change='$ctrl.blockColorClick($ctrl.blockLine)' />
+    </td>
+  </tr>
+</table><br />
+

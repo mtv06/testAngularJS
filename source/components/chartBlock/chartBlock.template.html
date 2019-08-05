@@ -1,0 +1,7 @@
+<div class="row">
+  <div class="col-sm-12" ng-repeat='block in $ctrl.sensorBlocks'>
+    <chart-settings ng-click='$ctrl.blockClick(block.name)' ng-hide="$ctrl.checkBlock()" block='$ctrl.blocks' block-line='block.name'
+    chart-options='$ctrl.chartOptions' bind-type="$ctrl.typeLine" chart-data-temperature="$ctrl.chartDataTemperature" chart-data-humidity="$ctrl.chartDataHumidity"
+     chart-data-light="$ctrl.chartDataLight" chart-data-pressure="$ctrl.chartDataPressure"></chart-settings>
+  </div>
+</div>

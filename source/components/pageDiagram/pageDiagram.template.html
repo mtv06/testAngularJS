@@ -1,0 +1,49 @@
+<h1>Charts</h1><br />
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6">
+      <button type="button" class="btn btn-primary" ng-click='$ctrl.chart1Click()'>Chart1</button>
+      <button type="button" class="btn btn-primary" ng-click='$ctrl.chart2Click()'>Chart2</button>
+      <button type="button" class="btn btn-primary" ng-click='$ctrl.chart3Click()'>Chart3</button>
+      <button type="button" class="btn btn-primary" ng-click='$ctrl.chart4Click()'>Chart4</button>
+    </div>
+    <div class="col-sm-6">
+      <div class="date-input">
+        <strong>From</strong> 
+        <input id="date" type="date" ng-change='$ctrl.dateClick()' ng-model="$ctrl.dateStart">
+        <strong>To</strong> 
+        <input id="date" type="date" ng-change='$ctrl.dateClick()'  ng-model="$ctrl.dateEnd">
+      </div>
+    </div>
+  </div><br />
+  <hr />
+  <div class="row">
+    <div class="col-sm-6" ng-show="$ctrl.chart1Visible">
+        <chart-block chart-options='$ctrl.chartOptions1' chart-number="$ctrl.chartNumber1" chart-data-temperature="$ctrl.chartDataTemperature" 
+        chart-data-humidity="$ctrl.chartDataHumidity" chart-data-light="$ctrl.chartDataLight" chart-data-pressure="$ctrl.chartDataPressure"
+        sensor-blocks="$ctrl.sensorBlocks"></chart-block>
+        <div id="container1"></div>
+    </div>
+    <div class="col-sm-6" ng-show="$ctrl.chart2Visible">
+        <chart-block chart-options='$ctrl.chartOptions2' chart-number="$ctrl.chartNumber2" chart-data-temperature="$ctrl.chartDataTemperature" 
+        chart-data-humidity="$ctrl.chartDataHumidity" chart-data-light="$ctrl.chartDataLight" chart-data-pressure="$ctrl.chartDataPressure"
+        sensor-blocks="$ctrl.sensorBlocks"></chart-block>
+        <div id="container2"></div>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+      <div class="col-sm-6" ng-show="$ctrl.chart3Visible">
+          <chart-block chart-options='$ctrl.chartOptions3' chart-number="$ctrl.chartNumber3" chart-data-temperature="$ctrl.chartDataTemperature" 
+          chart-data-humidity="$ctrl.chartDataHumidity" chart-data-light="$ctrl.chartDataLight" chart-data-pressure="$ctrl.chartDataPressure"
+          sensor-blocks="$ctrl.sensorBlocks"></chart-block>
+          <div id="container3"></div>
+      </div>
+      <div class="col-sm-6" ng-show="$ctrl.chart4Visible">
+          <chart-block chart-options='$ctrl.chartOptions4' chart-number="$ctrl.chartNumber4" chart-data-temperature="$ctrl.chartDataTemperature" 
+          chart-data-humidity="$ctrl.chartDataHumidity" chart-data-light="$ctrl.chartDataLight" chart-data-pressure="$ctrl.chartDataPressure"
+          sensor-blocks="$ctrl.sensorBlocks"></chart-block>
+          <div id="container4"></div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+table {
+    border: 1px solid #D3D3D3; 
+    text-align: center;
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
+}
+
+.td {
+    padding: 10px;
+    border: 1px solid #D3D3D3;
+}
